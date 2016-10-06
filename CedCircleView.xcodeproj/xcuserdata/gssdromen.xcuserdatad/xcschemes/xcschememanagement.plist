@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>CedCircleViewDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>AE61106F1DA49C1900048402</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AEC654FA1DA5340B00D097A6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -8,12 +8,56 @@
 
 /* Begin PBXBuildFile section */
 		AE6110751DA49C1900048402 /* CedCircleView.h in Headers */ = {isa = PBXBuildFile; fileRef = AE6110731DA49C1900048402 /* CedCircleView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEC654F61DA5176F00D097A6 /* CedCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC654F51DA5176F00D097A6 /* CedCircleView.swift */; };
+		AEC654FE1DA5340B00D097A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC654FD1DA5340B00D097A6 /* AppDelegate.swift */; };
+		AEC655001DA5340B00D097A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC654FF1DA5340B00D097A6 /* ViewController.swift */; };
+		AEC655031DA5340B00D097A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC655011DA5340B00D097A6 /* Main.storyboard */; };
+		AEC655051DA5340B00D097A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC655041DA5340B00D097A6 /* Assets.xcassets */; };
+		AEC655081DA5340B00D097A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC655061DA5340B00D097A6 /* LaunchScreen.storyboard */; };
+		AEC6550E1DA5387C00D097A6 /* CedCircleView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6110701DA49C1900048402 /* CedCircleView.framework */; };
+		AEC6550F1DA5387C00D097A6 /* CedCircleView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE6110701DA49C1900048402 /* CedCircleView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AEC655141DA54AA200D097A6 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC655131DA54AA200D097A6 /* Kingfisher.framework */; };
+		AEC655151DA54AA200D097A6 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEC655131DA54AA200D097A6 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AEC655101DA5387C00D097A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE6110671DA49C1900048402 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE61106F1DA49C1900048402;
+			remoteInfo = CedCircleView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AEC655121DA5387C00D097A6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AEC655151DA54AA200D097A6 /* Kingfisher.framework in Embed Frameworks */,
+				AEC6550F1DA5387C00D097A6 /* CedCircleView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AE6110701DA49C1900048402 /* CedCircleView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CedCircleView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6110731DA49C1900048402 /* CedCircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CedCircleView.h; sourceTree = "<group>"; };
 		AE6110741DA49C1900048402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEC654F51DA5176F00D097A6 /* CedCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CedCircleView.swift; sourceTree = "<group>"; };
+		AEC654FB1DA5340B00D097A6 /* CedCircleViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CedCircleViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEC654FD1DA5340B00D097A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AEC654FF1DA5340B00D097A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AEC655021DA5340B00D097A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AEC655041DA5340B00D097A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AEC655071DA5340B00D097A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AEC655091DA5340B00D097A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEC655131DA54AA200D097A6 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +68,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AEC654F81DA5340B00D097A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC655141DA54AA200D097A6 /* Kingfisher.framework in Frameworks */,
+				AEC6550E1DA5387C00D097A6 /* CedCircleView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -31,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				AE6110721DA49C1900048402 /* CedCircleView */,
+				AEC654FC1DA5340B00D097A6 /* CedCircleViewDemo */,
 				AE6110711DA49C1900048402 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				AE6110701DA49C1900048402 /* CedCircleView.framework */,
+				AEC654FB1DA5340B00D097A6 /* CedCircleViewDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,8 +103,23 @@
 			children = (
 				AE6110731DA49C1900048402 /* CedCircleView.h */,
 				AE6110741DA49C1900048402 /* Info.plist */,
+				AEC654F51DA5176F00D097A6 /* CedCircleView.swift */,
 			);
 			path = CedCircleView;
+			sourceTree = "<group>";
+		};
+		AEC654FC1DA5340B00D097A6 /* CedCircleViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AEC654FD1DA5340B00D097A6 /* AppDelegate.swift */,
+				AEC655131DA54AA200D097A6 /* Kingfisher.framework */,
+				AEC654FF1DA5340B00D097A6 /* ViewController.swift */,
+				AEC655011DA5340B00D097A6 /* Main.storyboard */,
+				AEC655041DA5340B00D097A6 /* Assets.xcassets */,
+				AEC655061DA5340B00D097A6 /* LaunchScreen.storyboard */,
+				AEC655091DA5340B00D097A6 /* Info.plist */,
+			);
+			path = CedCircleViewDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,18 +154,45 @@
 			productReference = AE6110701DA49C1900048402 /* CedCircleView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		AEC654FA1DA5340B00D097A6 /* CedCircleViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEC6550A1DA5340B00D097A6 /* Build configuration list for PBXNativeTarget "CedCircleViewDemo" */;
+			buildPhases = (
+				AEC654F71DA5340B00D097A6 /* Sources */,
+				AEC654F81DA5340B00D097A6 /* Frameworks */,
+				AEC654F91DA5340B00D097A6 /* Resources */,
+				AEC655121DA5387C00D097A6 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEC655111DA5387C00D097A6 /* PBXTargetDependency */,
+			);
+			name = CedCircleViewDemo;
+			productName = CedCircleViewDemo;
+			productReference = AEC654FB1DA5340B00D097A6 /* CedCircleViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		AE6110671DA49C1900048402 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = gssdromen;
 				TargetAttributes = {
 					AE61106F1DA49C1900048402 = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = F3ZEDWRDX7;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
+					};
+					AEC654FA1DA5340B00D097A6 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = F3ZEDWRDX7;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -105,6 +202,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = AE6110661DA49C1900048402;
 			productRefGroup = AE6110711DA49C1900048402 /* Products */;
@@ -112,6 +210,7 @@
 			projectRoot = "";
 			targets = (
 				AE61106F1DA49C1900048402 /* CedCircleView */,
+				AEC654FA1DA5340B00D097A6 /* CedCircleViewDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +223,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AEC654F91DA5340B00D097A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC655081DA5340B00D097A6 /* LaunchScreen.storyboard in Resources */,
+				AEC655051DA5340B00D097A6 /* Assets.xcassets in Resources */,
+				AEC655031DA5340B00D097A6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -131,10 +240,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEC654F61DA5176F00D097A6 /* CedCircleView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC654F71DA5340B00D097A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC655001DA5340B00D097A6 /* ViewController.swift in Sources */,
+				AEC654FE1DA5340B00D097A6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AEC655111DA5387C00D097A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE61106F1DA49C1900048402 /* CedCircleView */;
+			targetProxy = AEC655101DA5387C00D097A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AEC655011DA5340B00D097A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEC655021DA5340B00D097A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AEC655061DA5340B00D097A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEC655071DA5340B00D097A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AE6110761DA49C1900048402 /* Debug */ = {
@@ -239,8 +385,31 @@
 		AE6110791DA49C1900048402 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F3ZEDWRDX7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CedCircleView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cedric.CedCircleView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AE61107A1DA49C1900048402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F3ZEDWRDX7;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -252,22 +421,44 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
-			name = Debug;
+			name = Release;
 		};
-		AE61107A1DA49C1900048402 /* Release */ = {
+		AEC6550B1DA5340B00D097A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CedCircleView/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cedric.CedCircleView;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F3ZEDWRDX7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CedCircleViewDemo",
+				);
+				INFOPLIST_FILE = CedCircleViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cedric.CedCircleViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				PROVISIONING_PROFILE = "78e6fd5b-ea93-4931-a588-255eb3fd3c66";
+				PROVISIONING_PROFILE_SPECIFIER = "*";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AEC6550C1DA5340B00D097A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F3ZEDWRDX7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CedCircleViewDemo",
+				);
+				INFOPLIST_FILE = CedCircleViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cedric.CedCircleViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "78e6fd5b-ea93-4931-a588-255eb3fd3c66";
+				PROVISIONING_PROFILE_SPECIFIER = "*";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -289,6 +480,15 @@
 			buildConfigurations = (
 				AE6110791DA49C1900048402 /* Debug */,
 				AE61107A1DA49C1900048402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEC6550A1DA5340B00D097A6 /* Build configuration list for PBXNativeTarget "CedCircleViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEC6550B1DA5340B00D097A6 /* Debug */,
+				AEC6550C1DA5340B00D097A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
