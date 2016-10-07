@@ -14,11 +14,11 @@ Pod::Spec.new do |s|
   A pure Swift framework for cyclical view like bannerView.
   often used for banner
                    DESC
-  s.homepage     = "https://github.com/gssdromen/CedCircleView"
+  s.homepage     = "http://gitlab.esf.fangdd.net/wuyinjun/CedCircleView.git"
   s.license      = "MIT"
   s.author             = { "wuyinjun" => "wuyinjun@fangdd.com" }
   s.platform     = :ios
-  s.source       = { :git => "https://github.com/gssdromen/CedCircleView.git", :tag => "#{s.version}" }
+  s.source       = { :git => "http://gitlab.esf.fangdd.net/wuyinjun/CedCircleView.git", :tag => "#{s.version}" }
   s.source_files  = "CedCircleView/**/*.swift"
   s.requires_arc = true
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
