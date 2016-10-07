@@ -18,8 +18,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author             = { "wuyinjun" => "wuyinjun@fangdd.com" }
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "http://gitlab.esf.fangdd.net/wuyinjun/CedCircleView.git", :tag => "#{s.version}" }
-  # s.source       = { :git => "http://gitlab.esf.fangdd.net/wuyinjun/CedCircleView.git", :branch => "master" }
+  s.source       = { :git => "https://github.com/gssdromen/CedCircleView.git", :tag => "#{s.version}" }
   s.source_files  = "CedCircleView/**/*.swift"
   s.requires_arc = true
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
