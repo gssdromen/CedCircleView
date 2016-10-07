@@ -101,7 +101,7 @@ public class CedCircleView: UIView, UIScrollViewDelegate {
         self.delegate?.clickCurrentImage(index: page.1)
     }
     
-    private func timerAction() {
+    @objc private func timerAction() {
         self.scrollView.setContentOffset(CGPoint(x: self.bounds.width * 2, y: 0), animated: true)
     }
     
@@ -171,9 +171,9 @@ public class CedCircleView: UIView, UIScrollViewDelegate {
             self.timeInterval = 3.5
         }
         if self.timer == nil && self.timeInterval != nil {
-            self.timer = Timer(timeInterval: self.timeInterval!, repeats: true, block: { [weak self] (timer) in
-                self?.timerAction()
-            })
+            
+            self.timer = Timer(timeInterval: self.timeInterval!, target: self, selector: #selector(CedCircleView.timerAction), userInfo: nil, repeats: true)
+
         } else {
             self.timer?.invalidate()
         }
