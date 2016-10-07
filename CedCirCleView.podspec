@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   A pure Swift framework for cyclical view like bannerView.
   often used for banner
                    DESC
-  s.homepage     = "https://github.com/gssdromen/CedCircleView"
+  s.homepage     = "https://github.com/gssdromen/CedCircleView/"
   s.license      = "MIT"
   s.author             = { "wuyinjun" => "wuyinjun@fangdd.com" }
   s.platform     = :ios, "8.0"
