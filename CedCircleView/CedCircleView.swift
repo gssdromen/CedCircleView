@@ -83,7 +83,7 @@ public class CedCircleView: UIView, UIScrollViewDelegate {
     }
     
     // MARK: - Public Methods
-    func reloadData() {
+    public func reloadData() {
         print("in reloadData")
         self.imageCacheDict.removeAll()
         self.configViews()
