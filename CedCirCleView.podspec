@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "CedCirCleView"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "A pure Swift framework for cyclical view like bannerView"
   s.description  = <<-DESC
   A pure Swift framework for cyclical view like bannerView.
