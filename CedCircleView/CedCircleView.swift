@@ -46,15 +46,12 @@ public class CedCircleView: UIView, UIScrollViewDelegate {
     
     // MARK: - UIScrollViewDelegate
     public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        print("in scrollViewWillBeginDragging")
     }
     
     public func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
-        print("in scrollViewWillBeginDecelerating")
     }
     
     public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        print("in scrollViewDidEndDecelerating")
         let offset = scrollView.contentOffset.x
         let page = self.getCurrentPage()
         if offset == 0 {
@@ -69,7 +66,6 @@ public class CedCircleView: UIView, UIScrollViewDelegate {
     }
     
     public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        print("in scrollViewDidEndDragging")
         // 如果用户手动拖动到了一个整数页的位置就不会发生滑动了所以需要判断手动调用滑动停止滑动方法
         if !decelerate {
             self.scrollViewDidEndDecelerating(scrollView)
@@ -78,13 +74,11 @@ public class CedCircleView: UIView, UIScrollViewDelegate {
     
     // 时间触发器设置滑动时动画true，会触发的方法
     public func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
-        print("in scrollViewDidEndScrollingAnimation")
         self.scrollViewDidEndDecelerating(scrollView)
     }
     
     // MARK: - Public Methods
     public func reloadData() {
-        print("in reloadData")
         self.imageCacheDict.removeAll()
         self.configViews()
         guard self.totalPages != nil else {
