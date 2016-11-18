@@ -13,11 +13,15 @@ public protocol CedCircleViewDelegate: class {
      *点击图片的代理方法
      */
     func clickCurrentImage(index: UInt)
-    
-    /**
-     加载图片的代理方法，如果返回了UIImage，会进行图片的缓存
-     */
-    func refreshImageViewAtIndex(imageView: UIImageView, index: UInt) -> UIImage?
+
+    /// 加载图片的代理方法，如果返回了UIImage，会进行图片的缓存
+    ///
+    /// - Parameters:
+    ///   - imageView: ImageView
+    ///   - index: Index
+    ///   - offset: 负数表示左一张，0表示当前张，正数表示右一张
+    /// - Returns: UIImage, 如果返回了UIImage，会进行图片的缓存
+    func refreshImageViewAtIndex(imageView: UIImageView, index: UInt, offset: Int) -> UIImage?
     
     /**
      图片张数
@@ -109,7 +113,7 @@ public class CedCircleView: UIView, UIScrollViewDelegate {
             if self.totalPages! > 0 {
                 prevIndex = self.totalPages! - 1
             } else {
-                print("图片轮播总数为0")
+//                print("图片轮播总数为0")
             }
         } else {
             prevIndex = self.curPage! - 1
@@ -130,7 +134,7 @@ public class CedCircleView: UIView, UIScrollViewDelegate {
         if self.imageCacheDict[page.0] != nil {
             self.prevImageView.image = self.imageCacheDict[page.0]
         } else {
-            let image = self.delegate?.refreshImageViewAtIndex(imageView: self.prevImageView, index: page.0)
+            let image = self.delegate?.refreshImageViewAtIndex(imageView: self.prevImageView, index: page.0, offset: -1)
             if image != nil {
                 self.imageCacheDict[page.0] = image!
             }
@@ -138,7 +142,7 @@ public class CedCircleView: UIView, UIScrollViewDelegate {
         if self.imageCacheDict[page.1] != nil {
             self.prevImageView.image = self.imageCacheDict[page.1]
         } else {
-            let image = self.delegate?.refreshImageViewAtIndex(imageView: self.curImageView, index: page.1)
+            let image = self.delegate?.refreshImageViewAtIndex(imageView: self.curImageView, index: page.1, offset: 0)
             if image != nil {
                 self.imageCacheDict[page.1] = image!
             }
@@ -146,7 +150,7 @@ public class CedCircleView: UIView, UIScrollViewDelegate {
         if self.imageCacheDict[page.2] != nil {
             self.prevImageView.image = self.imageCacheDict[page.2]
         } else {
-            let image = self.delegate?.refreshImageViewAtIndex(imageView: self.nextImageView, index: page.2)
+            let image = self.delegate?.refreshImageViewAtIndex(imageView: self.nextImageView, index: page.2, offset: 1)
             if image != nil {
                 self.imageCacheDict[page.2] = image!
             }
