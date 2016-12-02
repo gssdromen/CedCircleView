@@ -219,9 +219,9 @@ public class CedCircleView: UIView, UIScrollViewDelegate {
         let constraints4 = NSLayoutConstraint.constraints(withVisualFormat: "V:|[i1(height)]|", options: NSLayoutFormatOptions.alignmentMask, metrics: ["height": self.bounds.height], views: ["i1": self.prevImageView])
         let constraints5 = NSLayoutConstraint.constraints(withVisualFormat: "V:|[i2(height)]|", options: NSLayoutFormatOptions.alignmentMask, metrics: ["height": self.bounds.height], views: ["i2": self.curImageView])
         let constraints6 = NSLayoutConstraint.constraints(withVisualFormat: "V:|[i3(height)]|", options: NSLayoutFormatOptions.alignmentMask, metrics: ["height": self.bounds.height], views: ["i3": self.nextImageView])
-        self.prevImageView.backgroundColor = UIColor.red
-        self.curImageView.backgroundColor = UIColor.green
-        self.nextImageView.backgroundColor = UIColor.blue
+//        self.prevImageView.backgroundColor = UIColor.red
+//        self.curImageView.backgroundColor = UIColor.green
+//        self.nextImageView.backgroundColor = UIColor.blue
         self.scrollView.addConstraints(constraints3)
         self.scrollView.addConstraints(constraints4)
         self.scrollView.addConstraints(constraints5)
