@@ -13,7 +13,7 @@ public protocol CedCircleViewDelegate: class {
      *点击图片的代理方法
      */
     func clickCurrentImage(index: UInt)
-
+    
     /// 加载图片的代理方法，如果返回了UIImage，会进行图片的缓存
     ///
     /// - Parameters:
@@ -113,7 +113,7 @@ public class CedCircleView: UIView, UIScrollViewDelegate {
             if self.totalPages! > 0 {
                 prevIndex = self.totalPages! - 1
             } else {
-//                print("图片轮播总数为0")
+                //                print("图片轮播总数为0")
             }
         } else {
             prevIndex = self.curPage! - 1
@@ -169,11 +169,9 @@ public class CedCircleView: UIView, UIScrollViewDelegate {
             self.timeInterval = 3.5
         }
         if self.timer == nil && self.timeInterval != nil {
-            
             self.timer = Timer(timeInterval: self.timeInterval!, target: self, selector: #selector(CedCircleView.timerAction), userInfo: nil, repeats: true)
-
         } else {
-            self.timer?.invalidate()
+            //            self.timer?.invalidate()
         }
         if self.timer != nil {
             RunLoop.current.add(self.timer!, forMode: RunLoopMode.defaultRunLoopMode)
@@ -221,16 +219,16 @@ public class CedCircleView: UIView, UIScrollViewDelegate {
         let constraints4 = NSLayoutConstraint.constraints(withVisualFormat: "V:|[i1(height)]|", options: NSLayoutFormatOptions.alignmentMask, metrics: ["height": self.bounds.height], views: ["i1": self.prevImageView])
         let constraints5 = NSLayoutConstraint.constraints(withVisualFormat: "V:|[i2(height)]|", options: NSLayoutFormatOptions.alignmentMask, metrics: ["height": self.bounds.height], views: ["i2": self.curImageView])
         let constraints6 = NSLayoutConstraint.constraints(withVisualFormat: "V:|[i3(height)]|", options: NSLayoutFormatOptions.alignmentMask, metrics: ["height": self.bounds.height], views: ["i3": self.nextImageView])
-//        self.prevImageView.backgroundColor = UIColor.red
-//        self.curImageView.backgroundColor = UIColor.green
-//        self.nextImageView.backgroundColor = UIColor.blue
+        self.prevImageView.backgroundColor = UIColor.red
+        self.curImageView.backgroundColor = UIColor.green
+        self.nextImageView.backgroundColor = UIColor.blue
         self.scrollView.addConstraints(constraints3)
         self.scrollView.addConstraints(constraints4)
         self.scrollView.addConstraints(constraints5)
         self.scrollView.addConstraints(constraints6)
         self.scrollView.setContentOffset(CGPoint(x: self.bounds.width, y: 0), animated: true)
     }
-
+    
     // MARK: - Life Cycle
     override public func layoutSubviews() {
         super.layoutSubviews()
@@ -249,7 +247,7 @@ public class CedCircleView: UIView, UIScrollViewDelegate {
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.addMyViews()
-//        fatalError("init(coder:) has not been implemented")
+        //        fatalError("init(coder:) has not been implemented")
     }
-
+    
 }

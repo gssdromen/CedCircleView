@@ -11,6 +11,18 @@ import CedCircleView
 import Kingfisher
 
 class ViewController: UIViewController, CedCircleViewDelegate {
+    /// 加载图片的代理方法，如果返回了UIImage，会进行图片的缓存
+    ///
+    /// - Parameters:
+    ///   - imageView: ImageView
+    ///   - index: Index
+    ///   - offset: 负数表示左一张，0表示当前张，正数表示右一张
+    /// - Returns: UIImage, 如果返回了UIImage，会进行图片的缓存
+    public func refreshImageViewAtIndex(imageView: UIImageView, index: UInt, offset: Int) -> UIImage? {
+        imageView.kf_setImage(with: URL(string: "https://pbs.twimg.com/media/CYU6bUjUwAA_TUj.jpg"))
+        return nil
+    }
+
 
     let circle = CedCircleView()
     
@@ -21,14 +33,6 @@ class ViewController: UIViewController, CedCircleViewDelegate {
     
     func clickCurrentImage(index: UInt) {
         
-    }
-    
-    /**
-     加载图片的代理方法，如果返回了UIImage，会进行图片的缓存
-     */
-    public func refreshImageViewAtIndex(imageView: UIImageView, index: UInt) -> UIImage? {
-        imageView.kf_setImage(with: URL(string: "https://pbs.twimg.com/media/CYU6bUjUwAA_TUj.jpg"))
-        return nil
     }
 
     override func viewDidLoad() {
