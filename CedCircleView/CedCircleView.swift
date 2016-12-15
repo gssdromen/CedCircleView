@@ -47,6 +47,7 @@ public class CedCircleView: UIView, UIScrollViewDelegate {
     private var timeInterval: TimeInterval?
     private var timer: Timer?
     private var imageCacheDict = Dictionary<UInt, UIImage>()
+    private var isAutoScroll = true
     
     // MARK: - UIScrollViewDelegate
     public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
@@ -93,6 +94,20 @@ public class CedCircleView: UIView, UIScrollViewDelegate {
         self.refreshImages()
     }
     
+    public func enableAutoScroll(_ flag: Bool) {
+        self.isAutoScroll = flag
+    }
+    
+    public func setCurrentIndex(index: UInt) {
+        if let count = self.totalPages {
+            if index < count {
+                self.curPage = index
+                self.refreshImages()
+            }
+        }
+        
+    }
+    
     // MARK: - Private Methods
     @objc private func imageViewClickAction() {
         let page = self.getCurrentPage()
@@ -100,7 +115,9 @@ public class CedCircleView: UIView, UIScrollViewDelegate {
     }
     
     @objc private func timerAction() {
-        self.scrollView.setContentOffset(CGPoint(x: self.bounds.width * 2, y: 0), animated: true)
+        if self.isAutoScroll {
+            self.scrollView.setContentOffset(CGPoint(x: self.bounds.width * 2, y: 0), animated: true)
+        }
     }
     
     private func getCurrentPage() -> (UInt, UInt, UInt) {
