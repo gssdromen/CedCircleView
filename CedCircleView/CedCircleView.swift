@@ -42,6 +42,12 @@ public class CedCircleView: UIView, UIScrollViewDelegate {
     let prevImageView = UIImageView()
     let nextImageView = UIImageView()
     
+    override public var frame: CGRect {
+        didSet {
+            layoutMyViews()
+        }
+    }
+    
     private var totalPages: UInt?
     private var curPage: UInt?
     private var timeInterval: TimeInterval?
@@ -83,6 +89,14 @@ public class CedCircleView: UIView, UIScrollViewDelegate {
     }
     
     // MARK: - Public Methods
+    public func scrollToNextImage(animate: Bool) {
+        self.scrollView.setContentOffset(CGPoint(x: self.bounds.width * 2, y: 0), animated: animate)
+    }
+    
+    public func scrollToPreviousImage(animate: Bool) {
+        self.scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: animate)
+    }
+    
     public func reloadData() {
         self.imageCacheDict.removeAll()
         self.configViews()
