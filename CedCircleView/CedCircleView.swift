@@ -239,7 +239,7 @@ public class CedCircleView: UIView, UIScrollViewDelegate {
     }
     
     func layoutMyViews() {
-        guard self.scrollView != nil && self.nextImageView != nil && self.curImageView != nil && self.prevImageView != nil else {
+        guard self.scrollView.superview != nil && self.nextImageView.superview != nil && self.curImageView.superview != nil && self.prevImageView.superview != nil else {
             return
         }
         // 布局scrollView
