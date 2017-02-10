@@ -239,6 +239,9 @@ public class CedCircleView: UIView, UIScrollViewDelegate {
     }
     
     func layoutMyViews() {
+        guard self.scrollView != nil && self.nextImageView != nil && self.curImageView != nil && self.prevImageView != nil else {
+            return
+        }
         // 布局scrollView
         let constraints1 = NSLayoutConstraint.constraints(withVisualFormat: "H:|[scrollView]|", options: NSLayoutFormatOptions.alignmentMask, metrics: nil, views: ["scrollView": self.scrollView])
         let constraints2 = NSLayoutConstraint.constraints(withVisualFormat: "V:|[scrollView]|", options: NSLayoutFormatOptions.alignmentMask, metrics: nil, views: ["scrollView": self.scrollView])
