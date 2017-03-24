@@ -113,13 +113,12 @@ public class CedCircleView: UIView, UIScrollViewDelegate {
     }
 
     public func setCurrentIndex(index: UInt) {
-        //        if let count = self.totalPages {
-        //            if index < count {
-        self.curPage = index
-        self.refreshImages()
-        //            }
-        //        }
-
+        if let count = self.totalPages {
+            if index < count {
+                self.curPage = index
+                self.refreshImages()
+            }
+        }
     }
 
     // MARK: - Private Methods
@@ -283,5 +282,5 @@ public class CedCircleView: UIView, UIScrollViewDelegate {
         self.addMyViews()
         //        fatalError("init(coder:) has not been implemented")
     }
-    
+
 }
